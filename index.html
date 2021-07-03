@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8bcacce54e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sass/main.css">
+    <script src="./script.js" defer></script>
+    <title>Online Shoping Cart</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="./img/logo.png" alt="" class="logo-img"></div>
+            <div class="cart">
+                <i class="fas fa-shopping-cart"></i>
+                <h6 class="count" data-set="0"></h6>
+            </div>
+            <div class="item-list">
+                <div class="item-cards">
+                    <div class="card empty_card">
+                        <i class="fas fa-cart-plus"></i>
+                        <h5>Your cart is empty</h5>
+                    </div>
+                    <div class="card card-1">
+                        <div class="img-box col"><img src="./img/3.jpg" alt=""></div>
+                        <div class="content col">
+                            <h3>Original</h3>
+                            <p>Tomato sauce, mozzarella & oregano</p>
+                            <div id="qty__p1" class="qty">Quantity:- <span id="qty__c1" data-set="0"></span></div>
+                            <h6 id="price__1" class="price">$ <span class="price_span1" data-set="15.00"></span>.00</h6>
+                            <button class="btn rm-cart-1">Remove</button>
+                        </div>
+                    </div>
+                    <div class="card card-2">
+                        <div class="img-box col"><img src="./img/3.jpg" alt=""></div>
+                        <div class="content col">
+                            <h3>Original</h3>
+                            <p>Tomato sauce, mozzarella & oregano</p>
+                            <div id="qty__p2" class="qty"> Quantity:- <span id="qty__c2" data-set="0"></span></div>
+                            <h6 id="price__2" class="price">$<span class="price_span2" data-set="20.00"></span>.00</h6>
+                            <button class="btn rm-cart-2">Remove</button>
+                        </div>
+                    </div>
+                    <div class="card card-3">
+                        <div class="img-box col"><img src="./img/3.jpg" alt=""></div>
+                        <div class="content col">
+                            <h3>Original</h3>
+                            <p>Tomato sauce, mozzarella & oregano</p>
+                            <div id="qty__p3" class="qty">Quantity:-<span id="qty__c3" data-set="0"></span></div>
+                            <h6 id="price__3" class="price">$<span class="price_span3" data-set="35.00"></span>.00</h6>
+                            <button class="btn rm-cart-3">Remove</button>
+                        </div>
+                    </div>
+                    <div class="card card-4">
+                        <div class="img-box col"><img src="./img/3.jpg" alt=""></div>
+                        <div class="content col">
+                            <h3>Original</h3>
+                            <p>Tomato sauce, mozzarella & oregano</p>
+                            <div id="qty__p3" class="qty">Quantity:- <span id="qty__c4" data-set="0"></span></div>
+                            <h6 id="price__3" class="price">$<span class="price_span4" data-set="10.00"></span>.00 </h6>
+                            <button class="btn rm-cart-4">Remove</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="h-head">
+            <h1>Menu</h1>
+            <p>Unique wood fired pizzas or be tempted by our pasta, antipasto, focaccias, salads and Bruschetta dishes. Relax in the friendly ambience as you enjoy the aromas of the wood ovens or sit al fresco and soak up the Mildura sunshine.</p>
+        </div>
+
+        <div class="menu-items">
+            <div class="card item1">
+                <div class="img-box col"><img src="./img/3.jpg" alt=""></div>
+                <div class="content col">
+                    <h3>Original</h3>
+                    <p>Tomato sauce, mozzarella & oregano</p>
+                    <h6>$15.00</h6>
+                    <button class="btn btn-1 crt-add">Add to cart</button>
+                </div>
+            </div>
+            <div class="card item2 ">
+                <div class="img-box col"><img src="./img/3.jpg" alt=""></div>
+                <div class="content col">
+                    <h3>Original</h3>
+                    <p>Tomato sauce, mozzarella & oregano</p>
+                    <h6>$20.00</h6>
+                    <button class="btn btn-2 crt-add">Add to cart</button>
+                </div>
+            </div>
+            <div class="card item3">
+                <div class="img-box col"><img src="./img/3.jpg" alt=""></div>
+                <div class="content col">
+                    <h3>Original</h3>
+                    <p>Tomato sauce, mozzarella & oregano</p>
+                    <h6>$35.00</h6>
+                    <button class="btn btn-3 crt-add">Add to cart</button>
+                </div>
+            </div>
+            <div class="card item4">
+                <div class="img-box col"><img src="./img/3.jpg" alt=""></div>
+                <div class="content col">
+                    <h3>Original</h3>
+                    <p>Tomato sauce, mozzarella & oregano</p>
+                    <h6>$10.00</h6>
+                    <button class="btn btn-4 crt-add">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="img-credit">
+            <p>Image from <a href="#">Freepik</a></p>
+        </div>
+    </div>
+
+    <footer>
+
+        <p class="sample-text">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+
+        <p class="credit">Template created with Nicepage.</p>
+    </footer>
+</body>
+
+</html>
